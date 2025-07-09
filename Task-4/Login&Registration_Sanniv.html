@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Login&Registration_Sanniv.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h1>Login</h1>
+            <form id="login">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <div class="password-container">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <span class="toggle-password">Show</span>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="register-form" style="display: none;">
+            <h1>Register</h1>
+            <form id="register">
+                <input type="email" id="register-email" placeholder="Email" required>
+                <p class="error-message" id="email-error"></p>
+                <div class="password-container">
+                    <input type="password" id="register-password" placeholder="Password" required>
+                    <span class="toggle-password">Show</span>
+                </div>
+                <div id="password-strength-meter"></div>
+                <p class="error-message" id="password-error"></p>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    <span class="toggle-password">Show</span>
+                </div>
+                <p class="error-message" id="confirm-password-error"></p>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="Login&Registration_Sanniv.js"></script>
+</body>
+</html>

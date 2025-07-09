@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="To-Do_Sanniv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn"><i class="fas fa-plus"></i></button>
+        </div>
+        
+        <div class="todo-list-container">
+            <h2>My Tasks</h2>
+            <ul id="taskList" class="todo-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Task template (hidden) -->
+    <template id="taskTemplate">
+        <li class="task-item">
+            <div class="task-content">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text"></span>
+            </div>
+            <div class="task-actions">
+                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        </li>
+    </template>
+
+    <script src="To-Do_Sanniv.js"></script>
+</body>
+</html>
