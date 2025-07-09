@@ -18,14 +18,6 @@ A modern weather forecast application that allows users to search for weather in
 - OpenWeatherMap API
 - Font Awesome icons
 
-## Project Structure
-
-```
-├── index.html          # Main HTML structure
-├── style.css           # CSS styling and animations
-├── script.js           # JavaScript functionality and API integration
-```
-
 ## Setup Instructions
 
 ### Prerequisites
